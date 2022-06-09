@@ -1,6 +1,103 @@
 /* =============
     Galleries
 ============= */
-#galleries{
+#galleries {
+    img {
+        width: auto;
+    }
 
+    section {
+        img {
+    
+        }
+    }
+
+
+    .gallery-nav {
+        @include md{
+            display: grid;
+            grid-template-columns:25% auto auto auto auto 25%;
+            grid-template-areas: 
+            "left mercury venus mars apollo right";
+        }
+        @include lg{
+            grid-template-columns:25% auto auto auto auto 25%;
+        
+        }
+        @include xxl{
+            grid-template-columns:25% auto auto auto auto 25%;
+            
+        }
+
+        #left{
+            @include md{
+                grid-area: left;
+            }
+        }
+        #mercury{
+            @include md{
+                grid-area: mercury;
+            }
+        }
+        #venus{
+            @include md{
+                grid-area: venus;
+            }
+        }
+        #mars{
+            @include md{
+                grid-area: mars;
+            }
+        }
+        #apollo{
+            @include md{
+                grid-area: apollo;
+            }
+        }
+        #right{
+            @include md{
+                grid-area: right;
+            }
+        }
+    }
+
+    .gallery-img {
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+                "i1 i2"
+                "i3 i4";
+        }
+
+        @include lg {
+            grid-template-columns: 50% auto;
+        }
+
+        @include xxl {
+            grid-template-columns: 50% auto;
+        }
+
+        #i1{
+            @include md {
+                grid-area: i1;
+            }
+        }
+        #i2{
+            @include md {
+                grid-area: i2;
+            }
+        }
+        #i3{
+            @include md {
+                grid-area: i3;
+            }
+        }
+        #i4{
+            @include md {
+                grid-area: i4;
+            }
+        }
+        
+    }
 }

@@ -1,16 +1,26 @@
-<header>
-    <section>
-        <img src="img/header/Mainlogo.svg" alt="Main Logo">
-    </section>
-
-    <!-- @import "nav.kit"-->
-
-    <section>
-        <form action="#">
-            <button>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </button>
-            <input type="search" placeholder="Search" />
-        </form>
-    </section>
+<header class="css-grid-global">
+    <div>
+        <section>
+            <section>
+                <img src="img/header/Mainlogo.svg" alt="Main Logo">
+            </section>
+            <section class="show-for-md">
+                <nav>
+                    <ul>
+                        <li><a href="#">MISSIONS</a></li>
+                        <li><a href="#">FOLLOW</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="show-for-md">
+                <form action="#">
+                    <button>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <input type="search" placeholder="Search" />
+                    </button>
+                </form>
+            </section>
+        </section>
+    </div>
 </header>

@@ -13,117 +13,134 @@
 </head>
 
 <body>
-    <header>
-        <section>
-            <img src="img/header/Mainlogo.svg" alt="Main Logo">
-        </section>
-    
-        <nav>
-            <ul>
-                <li><a href="#">MISSIONS</a></li>
-                <li><a href="#">FOLLOW</a></li>
-                <li><a href="#">ABOUT</a></li>
-            </ul>
-            <aside>
-                <button>
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </aside>
-        </nav> 
-    
-        <section>
-            <form action="#">
-                <button>
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                </button>
-                <input type="search" placeholder="Search" />
-            </form>
-        </section>
+    <header class="css-grid-global">
+        <div>
+            <section>
+                <section>
+                    <img src="img/header/Mainlogo.svg" alt="Main Logo">
+                </section>
+                <section class="show-for-md">
+                    <nav>
+                        <ul>
+                            <li><a href="#">MISSIONS</a></li>
+                            <li><a href="#">FOLLOW</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="show-for-md">
+                    <form action="#">
+                        <button>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <input type="search" placeholder="Search" />
+                        </button>
+                    </form>
+                </section>
+            </section>
+        </div>
     </header>
-    <section id="home">
-        <section>
-            <img src="img/home/NASA_Wormlogo.svg" alt="Worm logo">
+    <section id="home" class="css-grid-global">
+            <section id="background-img">
+                <!-- <img src="img/home/Planet Photo Background.jpg" alt="Background img"> -->
+                
+            <div>
+                <section>
+                    <img src="img/home/NASA_Wormlogo.svg" alt="Worm logo">
+                </section>
+                <hr>
+                <section>
+                    <h2>The Global leader in space exploration</h2>
+                </section>
+                <section>
+                    <button class="outerspace-button">
+                        <p>Learn More</p>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </section>
+                <hr>
+                <section>
+                    <h3>Scientific discovery, economic benefits, and inspiration for a new generation of explorers</h3>
+                </section>
+            </div>
         </section>
-        <hr>
-        <section>
-            <h2>The Global leader in space exploration</h2>
         </section>
-        <section>
-            <button>
-                <p>Learn More</p>
-                <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-        </section>
-        <hr>
-        <section>
-            <h3>Scientific discovery, economic benefits, and inspiration for a new generation of explorers</h3>
-        </section>
-        </section>
-    <section id="galleries">
-                <section>
-                <h1>BROWSE POPULAR GALLERIES</h1>
-            </section>
-            <Section>
-                <button>
-                    <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <section>
-                    <ul>
-                        <li>Mercury</li>
-                        <li>Venus</li>
-                        <li>Mars</li>
-                        <li>Apollo</li>
-                    </ul>
-                </section>
-                <button>
-                    <i class="fa-solid fa-angle-right"></i>
-                </button> 
-            </Section>
-            <section>
-                <section>
-                    <img src="img/galleries/rover1.jpg" alt="Rover">
-                    <p>Perseverance is roving on Mars</p>
-                </section>
-                <section>
-                    <img src="img/galleries/merrss1.jpg" alt="Mars">
-                    <p>Rippled Mars</p>
-                </section>
-                <section>
-                    <img src="img/galleries/marsrrsrs1.jpg" alt="Mars2">
-                    <p>Mars at Ls 66°: Tharsis</p>
-                </section>
-                <section>
-                    <img src="img/galleries/artmars1.jpg" alt="global">
-                    <p>Mars global surveyor artist concept</p>
-                </section>
-            </section>
-            <section>
-                <h3>SEE MORE</h3>
-                <img src="img/galleries/dots.svg" alt="dots">
-            </section>
-            </section>
-    <section id="quote">
-                <section>
-                    <i class="fa-solid fa-quote-left"></i>
-                </section>
-                <section>
-                    <h1>
-                    <q>Keep youre eyes on the stars, and your feet on the ground.</q>
-                    </h1>
-                    <hr>
-                <h1><strong> Theodore Rossevelt</strong></h1>
-                </section>
-                </section>
-    <section id="missions">
+    <section id="galleries" class="css-grid-global">
+                <div>
+                    <section>
+                        <h1>BROWSE POPULAR GALLERIES</h1>
+                    </section>
+                    <Section>
                         <section>
                             <button>
-                                <h2>View All Missions</h2>
-                                <i class="fa-solid fa-arrow-right"></i>
+                                <i class="fa-solid fa-angle-left"></i>
                             </button>
                         </section>
+                        
+                        <section>
+                            <ul>
+                                <li>Mercury</li>
+                                <li>Venus</li>
+                                <li>Mars</li>
+                                <li>Apollo</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <button>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </section>
+                    </Section>
+                    <section class="gallery-img">
+                        <section id="i1">
+                            <img src="img/galleries/rover1.jpg" alt="Rover">
+                            <p>Perseverance is roving on Mars</p>
+                        </section>
+                        <section id="i2">
+                            <img src="img/galleries/merrss1.jpg" alt="Mars">
+                            <p>Rippled Mars</p>
+                        </section>
+                        <section id="i3">
+                            <img src="img/galleries/marsrrsrs1.jpg" alt="Mars2">
+                            <p>Mars at Ls 66°: Tharsis</p>
+                        </section>
+                        <section id="i4">
+                            <img src="img/galleries/artmars1.jpg" alt="global">
+                            <p>Mars global surveyor artist concept</p>
+                        </section>
                     </section>
-    <section id="featured">
-                            <h1>FEATURED ARTICLES</h1>
+                    <section>
+                        <h3>SEE MORE</h3>
+                        <img src="img/galleries/dots.svg" alt="dots">
+                    </section>
+                </div>
+            </section>
+    <section id="quote" class="css-grid-global">
+                    <div>
+                        <section>
+                            <i class="fa-solid fa-quote-left"></i>
+                        </section>
+                        <section>
+                            <h1>
+                            <q>Keep youre eyes on the stars, and your feet on the ground.</q>
+                            </h1>
+                            <hr>
+                        <h1><strong> Theodore Rossevelt</strong></h1>
+                        </section>
+                    </div>
+                </section>
+    <section id="missions" class="css-grid-global">
+                        <div>
+                            <section>
+                                <button class="outerspace-button">
+                                    <h2>View All Missions</h2>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </section>
+                        </div>
+                    </section>
+    <section id="featured" class="css-grid-global">
+                            <div>
+                                <h1>FEATURED ARTICLES</h1>
                             <section>
                                 <h2>STATION GEARS UP FOR SPACEWALKS WHILE CONDUCTING CANCER RESEARCH</h2>
                                 <h4>Bob Smith</h4>
@@ -136,45 +153,49 @@
                                         <p>POSTED ON 2.24.22 in <strong>SPACE STATIONS</strong></p>
                                     </section>
                             </section>
+                            </div>
                         </section>
-    <section>
-                                <img src="img/footer/footer_wormlogo.svg" alt="Worm Logo">
-                            </section>
+            <footer id="footer" class="css-grid-global">
+                                    <div>
+                                        <img src="img/footer/footer_wormlogo.svg" alt="Worm Logo">
+                                        </section>
                             
-                            <section>
-                                <p>National Aeronautics and Space Administration
-                                    NASA Official: Brian Dunbar</p>
-                            </section>
+                                        <section>
+                                            <p>National Aeronautics and Space Administration
+                                                NASA Official: Brian Dunbar</p>
+                                        </section>
                             
-                            <section>
-                                <ul>
-                                    <li>
-                                        No Fear Act
-                                    </li>
-                                    <li>
-                                        FOIA
-                                    </li>
-                                    <li>
-                                        Privacy
-                                    </li>
-                                    <li>
-                                        Contact NASA
-                                    </li>
-                                </ul> <br>
-                                <ul>
-                                    <li>Office of Inspector General</li>
-                                    <li>Office of Special Counsel</li>
-                                    <li>Agency Financial Reports</li>
-                                </ul>
-                            </section>
-                            <Section>
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
-                                </ul>
-                            </Section>
+                                        <section>
+                                            <ul>
+                                                <li>
+                                                    No Fear Act
+                                                </li>
+                                                <li>
+                                                    FOIA
+                                                </li>
+                                                <li>
+                                                    Privacy
+                                                </li>
+                                                <li>
+                                                    Contact NASA
+                                                </li>
+                                            </ul> <br>
+                                            <ul>
+                                                <li>Office of Inspector General</li>
+                                                <li>Office of Special Counsel</li>
+                                                <li>Agency Financial Reports</li>
+                                            </ul>
+                                        </section>
+                                        <Section>
+                                            <ul>
+                                                <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+                                            </ul>
+                                        </Section>
+                                    </div>
+                                </footer>
     <script src="js/scripts-min.js"></script>
 </body>
 

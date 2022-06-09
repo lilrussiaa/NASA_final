@@ -1,6 +1,28 @@
 /* =============
     Home
 ============= */
-#home{
-    
+#home {
+    #background-img {
+        width: 100vw;
+        height: 50vh;
+        background-image: url('../img/home/Planet Photo Background.jpg');
+        background-size: cover;
+        // x:left|center|right
+        // y: left|cetner|right
+        background-position: center;
+    }
+
+    img {
+        // width: 100%;
+    }
+    div {
+
+        section {
+
+        }
+
+    }
+
+    ;
+
 }

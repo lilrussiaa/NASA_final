@@ -1,3 +1,17 @@
 /* =============
     Buttons
 ============= */
+button{
+    margin:12px 12px;
+    padding: 12px 12px;
+}
+.outerspace-button{
+    background-color: var(--outerspace);
+    border: none;
+    border-radius: 36px;
+    color: var(--moon);
+    font-size: rem-calc(18);
+    font-weight: 100;
+    padding: 9px;
+
+}
