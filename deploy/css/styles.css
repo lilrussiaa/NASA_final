@@ -370,41 +370,53 @@ ul li {
 
 .css-grid-global {
   display: grid;
-  grid-template-columns: 24px auto 24px;
-  grid-template-areas: ". header .";
+  grid-template-columns: 24px auto auto 24px;
+  grid-template-areas: ". header header .";
 }
 @media (min-width: 1440px) {
   .css-grid-global {
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: auto 1440 1440 auto;
   }
 }
-.css-grid-global > div {
-  grid-area: header;
+@media (min-width: 1200px) {
+  .css-grid-global {
+    grid-template-columns: auto 1200 1200 auto;
+  }
 }
-
-.show-for-md {
+@media (min-width: 1024px) {
+  .css-grid-global {
+    grid-template-columns: auto 1024 1024 auto;
+  }
+}
+@media (min-width: 768px) {
+  .css-grid-global {
+    grid-template-columns: auto 768 768 auto;
+  }
+  .css-grid-global > div {
+    grid-area: header;
+  }
+}
+.css-grid-global .show-for-md {
   display: none;
 }
 @media (min-width: 768px) {
-  .show-for-md {
+  .css-grid-global .show-for-md {
     display: block;
   }
 }
-
-.show-for-lg {
+.css-grid-global .show-for-lg {
   display: none;
 }
 @media (min-width: 1024px) {
-  .show-for-lg {
+  .css-grid-global .show-for-lg {
     display: block;
   }
 }
-
-.show-for-xxl {
+.css-grid-global .show-for-xxl {
   display: none;
 }
 @media (min-width: 1440px) {
-  .show-for-xxl {
+  .css-grid-global .show-for-xxl {
     display: block;
   }
 }
@@ -470,94 +482,6 @@ header {
 /* =============
     Galleries
 ============= */
-#galleries img {
-  width: auto;
-}
-@media (min-width: 768px) {
-  #galleries .gallery-nav {
-    display: grid;
-    grid-template-columns: 25% auto auto auto auto 25%;
-    grid-template-areas: "left mercury venus mars apollo right";
-  }
-}
-@media (min-width: 1024px) {
-  #galleries .gallery-nav {
-    grid-template-columns: 25% auto auto auto auto 25%;
-  }
-}
-@media (min-width: 1440px) {
-  #galleries .gallery-nav {
-    grid-template-columns: 25% auto auto auto auto 25%;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-nav #left {
-    grid-area: left;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-nav #mercury {
-    grid-area: mercury;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-nav #venus {
-    grid-area: venus;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-nav #mars {
-    grid-area: mars;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-nav #apollo {
-    grid-area: apollo;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-nav #right {
-    grid-area: right;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-img {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "i1 i2" "i3 i4";
-  }
-}
-@media (min-width: 1024px) {
-  #galleries .gallery-img {
-    grid-template-columns: 50% auto;
-  }
-}
-@media (min-width: 1440px) {
-  #galleries .gallery-img {
-    grid-template-columns: 50% auto;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-img #i1 {
-    grid-area: i1;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-img #i2 {
-    grid-area: i2;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-img #i3 {
-    grid-area: i3;
-  }
-}
-@media (min-width: 768px) {
-  #galleries .gallery-img #i4 {
-    grid-area: i4;
-  }
-}
-
 /* =============
     Home
 ============= */
@@ -568,6 +492,7 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 /* =============
     Launches
 ============= */

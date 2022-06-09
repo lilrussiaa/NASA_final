@@ -12,12 +12,21 @@ ul{
 
 .css-grid-global{
     display: grid;
-    grid-template-columns: 24px auto 24px;
-    grid-template-areas: ". header .";
+    grid-template-columns: 24px auto auto 24px;
+    grid-template-areas: ". header header .";
 
     @include xxl{
-        grid-template-columns: auto 1440px auto;
+        grid-template-columns: auto 1440 1440 auto;
     }
+    @include xl{
+        grid-template-columns: auto 1200 1200 auto;
+    }
+    @include lg{
+        grid-template-columns: auto 1024 1024 auto;
+    }
+    @include md{
+        grid-template-columns: auto 768 768 auto;
+    
     >div {
         grid-area: header;
 }
@@ -44,4 +53,5 @@ ul{
     @include xxl{
         display: block;
     }
+}
 }
